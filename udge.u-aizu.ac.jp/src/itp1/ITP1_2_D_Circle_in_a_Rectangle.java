@@ -12,9 +12,14 @@ public class ITP1_2_D_Circle_in_a_Rectangle {
 		int r = sc.nextInt(); 
 		sc.close();
         //60 40 30 -50 3
+		//5 4 2 2 1
 		
 		String out = "Yes";
 		if( (W < (x + r)) || (H < (y + r))){
+			out = "No";
+		}
+		
+		if( (W >= 0 && 0 > x) || (H >= 0 && 0 > y)){
 			out = "No";
 		}
 		
